@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>diet-dropdown.js Examples</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="diet-dropdown.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1>diet-dropdown.js Examples</h1>
+	</div>
+	<div id="content">
+		<ul>
+			<li>
+				<label>
+					<span>Basic:</span> 
+					<select id="basic">
+						<option selected="selected" value="1">Apples</option>
+						<option value="2">Oranges</option>
+						<option value="3">Lemons</option>
+						<option value="4">Plums</option>
+						<option value="5">Strawberries</option>						
+					</select>
+				</label>
+				<code>
+					$('#basic').dietDropdown();
+				</code>
+			</li>
+			<li>
+				<label>
+					<span>Odd/even styling:</span> 
+					<select id="oddeven">
+						<option selected="selected" value="1">Carrots</option>
+						<option value="2">Potatos</option>
+						<option value="3">Onions</option>
+						<option value="4">Cucumbers</option>
+						<option value="5">Brad Pitt</option>						
+					</select>
+				</label>
+				<code>
+					$('#oddeven').dietDropdown({'oddeven' : true});
+				</code>
+			</li>			
+		</ul>
+	</div>
+	<div id="footer">
+			<span> Now go play.</span>
+	</div>
+	<script type="text/javascript">
+		$('#basic').dietDropdown();
+		$('#oddeven').dietDropdown({'oddeven' : true});
+	</script>
+</body>
+</html>

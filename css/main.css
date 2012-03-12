@@ -1,0 +1,177 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, 
+dfn, em, font, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;  
+} 
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    background: rgb(66, 66, 66);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(188, 188, 188)), to(rgb(233, 233, 233)));
+    background: -webkit-radial-gradient(rgb(188, 188, 188), rgb(233, 233, 233));
+    background:    -moz-radial-gradient(rgb(188, 188, 188), rgb(233, 233, 233));
+    background:      -o-radial-gradient(rgb(188, 188, 188), rgb(233, 233, 233));
+    background:         radial-gradient(rgb(188, 188, 188), rgb(233, 233, 233));
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400; 
+    color: #424242;
+    width:940px;
+    margin: 0 auto;
+    padding-top:80px;
+
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700; 
+  color: #FF9900;
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+}
+
+#header, #footer, #content {
+  padding:30px;
+}
+
+#header, #footer {
+  background:#BCBCBC;
+}
+
+#header {
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-box-shadow: -1px 15px 15px 0px #888;
+-moz-box-shadow: -1px 15px 15px 0px #888;
+box-shadow: -1px 15px 15px 0px #888;
+}
+
+#footer {
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#content {
+  background: #E9E9E9;
+  margin:30px 0;
+}
+
+select{
+  width:140px;
+}
+
+#diet-dropdown-value {
+  background: #fff url('../images/drop_arrow.png') right center no-repeat;
+  display: inline-block;
+  color: #1f1f1f;
+  text-align: left;
+  font-size: 13px;
+  height: 22px;
+  position: relative;
+  border: 1px solid #fff;
+
+}
+
+#content label:first-child{
+  min-width:350px;
+  margin:10px 0 20px 0;
+  display:inline-block;
+}
+
+#content label span:first-child{
+  padding-right:20px;
+  min-width:150px;
+  display: inline-block;
+}
+
+
+#diet-dropdown-value:hover{
+  border-color: rgba(82, 168, 236, 0.8) !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.border-hov { 
+  border-color: rgba(82, 168, 236, 0.8) !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+ }
+
+#diet-dropdown-value em {
+  padding-left: 5px;
+  font-style: normal;
+  line-height: 22px;
+  position: relative;
+  display: inline-block;
+  min-height: 15px;
+  cursor: pointer;
+}
+
+#diet-dropdown-value ul {
+  text-align: left;
+  background: #fff;
+  position: absolute;
+  top: 22px;
+  right: -1px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  display: none;
+  z-index: 3;
+}
+
+#diet-dropdown-value ul li {
+  padding: 3px 0 3px 5px;
+  border: 1px solid #ccc;
+  border-width: 0 1px 0 1px;
+  z-index: 3;
+}
+
+#diet-dropdown-value ul li:hover {
+  background: #ccc;  
+}
+
+code {
+  display: block;
+  padding:20px 0 20px 20px;
+  width:400px;
+  background-color: #FBF9EA;
+  border: 1px solid #E2E1D5;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin:0 0 10px 20px;
+  font-size:11px;
+}
+
+.diet-dropdown-odd {
+  color:#3299BB;
+}
+
+.select-hidden {
+  position: absolute;
+  z-index: -999;
+  left: -9999px;
+  top: -9999px;
+}
